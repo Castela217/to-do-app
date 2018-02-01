@@ -1,6 +1,7 @@
 function onReady(){
   let toDos = [];
 
+  let deleteOption = 0;
 const addToDoForm = document.getElementById("addToDoForm");
 
 const newToDoText = document.getElementById("newToDoText");
@@ -12,8 +13,12 @@ const toDoList = document.getElementById("toDoList");
 
       toDos.push({
         title: newToDoText.value,
-        complete: false
+        complete: false,
+        id: 00;
+        //assuming i have to set id value to 0 as starting value and then it would change later
       });
+      id == id++;
+      //trying to increment id; correct equal sign usage?
       newToDoText.value = "";
 
       renderTheUI();
